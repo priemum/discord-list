@@ -4,7 +4,7 @@ rovel.env.config();
 const fs = require("fs");
 const pkg = require("./package.json");
 if (process.version.split(1, 3) > 18) {
-  process.exit(0);
+  process.exit(0);        
 }
 
 if (pkg.checkCache == "true" && !process.argv.join(" ").includes("--force")) {
